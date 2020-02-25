@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>https://crosscommiframe.com</title>
+	<title>https://crosscomm.app</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -14,13 +14,13 @@
 			<div class="col">
 				<h1 style="margin-bottom: 2rem;">dev.project.com</h1>
 				<hr style="margin-bottom: 2rem;">
-				<p class="status-message">Waiting for data from <code>https://crosscommiframe.com</code>...</p>
+				<p class="status-message">Waiting for data from <code>https://crosscommiframe.app</code>...</p>
 				<div class="user-data alert alert-info" style="display: none;">
 					<p class="user-age"></p>
 					<p class="user-height" style="margin-bottom: 0;"></p>
 				</div>
 				<div class="embed-responsive embed-responsive-16by9" style="border: 1px solid rgba(0,0,0,.1); border-radius: 0.25rem; min-height: 400px;">
-					<iframe class="embed-responsive-item" src="https://crosscommiframe.com"></iframe>
+					<iframe class="embed-responsive-item" src="https://crosscommiframe.app"></iframe>
 				</div>
 			</div>
 		</div>
@@ -47,9 +47,9 @@
 		function handleMessage(event) {
 			console.log("Received a message from " + event.origin + ".");
 
-			// If the window that sent this message is not https://crosscommiframe.com, then
+			// If the window that sent this message is not https://crosscommiframe.app, then
 			// that message needs to be thrown out.
-			if (event.origin != "https://crosscommiframe.com") {
+			if (event.origin != "https://crosscommiframe.app") {
 				console.log("The message came from some site we don't know. We're not processing it.");
 				return;
 			}
@@ -73,7 +73,7 @@
 			$(".user-data").slideDown(200, function() {
 				setTimeout(function() {
 					$(".user-data").slideUp(200);
-					$(".status-message").html("Waiting for data from <code>https://crosscommiframe.com</code>...");
+					$(".status-message").html("Waiting for data from <code>https://crosscommiframe.app</code>...");
 				}, 5000);
 			});
 		}
